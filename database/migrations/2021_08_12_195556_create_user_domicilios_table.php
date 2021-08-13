@@ -22,6 +22,8 @@ class CreateUserDomiciliosTable extends Migration
             $table->integer('cp');
             $table->string('ciudad');
             $table->foreign('user_id')->references('id')->on('users');
+            $table->timestamps();
+
         });
     }
 
